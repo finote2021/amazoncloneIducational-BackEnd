@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: amazon-clone-backend
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: STRIPE_KEY
+        sync: false
